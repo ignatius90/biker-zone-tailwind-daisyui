@@ -29,7 +29,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
-            'btn-primary': '#E76F51',
+            'primary': '#E76F51',
           }
         }
       }
@@ -39,25 +39,26 @@
 
 <body class="poppins-font">
   <!-- header -->
-  <header class="container relative py-6 mx-auto text-white bg-[#ffffff00]">
+  <header class="container relative mx-auto text-white bg-primary">
     <!-- navigation -->
-    <div class="flex justify-evenly z-1 max-w-screen-lg mx-auto items-center">
+    <div class="md:flex py-5 px-3 md:px-0 justify-evenly z-1 max-w-screen-lg mx-auto items-center">
       <h3 class="flex-1 text-4xl font-bold">Go Ride</h3>
-      <nav>
-        <ul class="flex gap-10 font-medium">
+      <nav class="flex items-center md:gap-5">
+        <ul class="flex gap-3 md:gap-10 font-medium">
           <li><a href="">Home</a></li>
           <li><a href="">Shop</a></li>
           <li><a href="">News</a></li>
           <li><a href="">Contact</a></li>
         </ul>
+        <button class="inline-block text-white btn ml-5 md:ml-10 bg-primary px-8">Login</button>
       </nav>
-      <button class="inline-block text-white btn ml-10 bg-btn-primary px-8">Login</button>
+
     </div>
 
     <!-- hero section -->
-    <div class="hero absolute -z-10 top-0 min-h-screen" style="background-image: url(/images/others/bg-bike.jpg);">
+    <div class="hero top-0 min-h-screen" style="background-image: url(/images/others/bg-bike.jpg);">
       <div class="hero-overlay bg-opacity-60"></div>
-      <div class="hero-content text-white">
+      <div class="hero-content pt-40 text-white">
         <div class="max-w-3xl">
           <h1 class="mb-5 text-5xl font-bold">Keep Your Ride Safe <br> At Every Time</h1>
           <p class="mb-5">
@@ -65,7 +66,7 @@
             do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
             amet.
           </p>
-          <button class="btn bg-btn-primary text-white">Purchase</button>
+          <button class="btn bg-primary text-white">Purchase</button>
         </div>
       </div>
     </div>
@@ -75,6 +76,23 @@
 
   <!-- main section -->
   <main>
+    <!-- featured section -->
+    <div class="max-w-[1140px] mx-auto py-16">
+      <!-- heading -->
+      <div class="text-center space-y-4 py-10">
+        <h2 class="text-5xl font-semibold">Fetured Bikes In This Year</h2>
+        <p class="text-[14px] font-semibold text-[#E76F51]">Best bike collection</p>
+      </div>
+
+      <!-- images -->
+      <div class="md:flex space-y-20 md:space-y-0 justify-between">
+        <div class="md:w-72"><img class="mx-auto md:mx-0 md:w-full" src="images/others/feature-bike.png" alt="">
+        </div>
+        <div class="  md:w-72"><img class="w-[80%] mx-auto md:mx-0 md:w-full" src="images/others/extrabike.png" alt="">
+        </div>
+        <div class=" md:w-72"><img class="md:w-full mx-auto md:mx-0" src="images/others/feature-bike.png" alt=""></div>
+      </div>
+    </div>
 
   </main>
 
