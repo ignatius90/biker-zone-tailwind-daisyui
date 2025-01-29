@@ -39,9 +39,9 @@
 
 <body class="poppins-font">
   <!-- header -->
-  <header class="container relative mx-auto text-white bg-primary">
+  <header class="container mx-auto text-white">
     <!-- navigation -->
-    <div class="md:flex py-5 px-3 md:px-0 justify-evenly z-1 max-w-screen-lg mx-auto items-center">
+    <div class="md:flex py-5 px-3 z-10 md:px-0 justify-evenly -z-1 max-w-screen-lg mx-auto items-center">
       <h3 class="flex-1 text-4xl font-bold">Go Ride</h3>
       <nav class="flex items-center md:gap-5">
         <ul class="flex gap-3 md:gap-10 font-medium">
@@ -56,7 +56,8 @@
     </div>
 
     <!-- hero section -->
-    <div class="hero top-0 min-h-screen" style="background-image: url(images/others/bg-bike.jpg);">
+    <div class="hero relative -z-10 -top-[130px]  lg:-top-[88px] min-h-screen"
+      style="background-image: url(images/others/bg-bike.jpg);">
       <div class="hero-overlay bg-opacity-60"></div>
       <div class="hero-content pt-40 text-white">
         <div class="max-w-3xl">
@@ -82,6 +83,7 @@
       <div class="text-center space-y-4 py-10">
         <h2 class="text-5xl font-semibold">Fetured Bikes In This Year</h2>
         <p class="text-[14px] font-semibold text-[#E76F51]">Best bike collection</p>
+        <hr class="w-1/12 border-[#E76F51] m-auto">
       </div>
 
       <!-- images -->
@@ -153,9 +155,9 @@
       </div>
 
       <!-- reviews -->
-      <div class="md:flex gap-5">
+      <div class="md:flex m-5 gap-5">
         <!-- 1st review -->
-        <div class="card bg-base-100 m-5 md:m-0 p-8 w-full md:w-96 shadow-xl border">
+        <div class="card bg-base-100  md:m-0 p-8 w-full md:w-96 shadow-xl border">
           <figure class="px-10 pt-10">
             <img src="images/others/user-1.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -179,7 +181,7 @@
         </div>
 
         <!-- 2nd review -->
-        <div class="card bg-base-100 m-5 md:m-0 p-8 w-full md:w-96 shadow-xl border">
+        <div class="card mt-5 md:mt-0 bg-base-100 p-8 w-full md:w-96 shadow-xl border">
           <figure class="px-10 pt-10">
             <img src="images/others/user-2.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -203,7 +205,7 @@
         </div>
 
         <!-- 3rd review -->
-        <div class="card bg-base-100 m-5 md:m-0 p-8 w-full md:w-96 shadow-xl border">
+        <div class="card bg-base-100 mt-5 md:mt-0 p-8 w-full md:w-96 shadow-xl border">
           <figure class="px-10 pt-10">
             <img src="images/others/user-3.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -236,10 +238,10 @@
       <!-- image section -->
       <div class="hero min-h-screen p-5 justify-center">
         <div class="hero-content flex-col lg:flex-row">
-          <img src="images/others/faq.png" class="max-w-sm rounded-lg" />
+          <img src="images/others/faq.png" class="w-full rounded-lg" />
 
           <!-- accordion section -->
-          <div class="space-y-3 lg:pl-20 ">
+          <div class="space-y-3 p-5 lg:pl-20 ">
             <!-- first accordion -->
             <div class="collapse collapse-arrow border">
               <input type="radio" name="my-accordion-2" checked="checked" />
